@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function f1(){
+            var num1=prompt("Enter the first number")
+            var num2=prompt("Enter the second number ")
+            var operator = prompt("Please select among +,-,*,/")
+            switch(operator){
+                case "+":
+                    var res=parseInt(num1)+parseInt(num2);
+                    document.write(`${num1}+${num2}=${res}`)
+                    break;
+                case "-":
+                    var res=parseInt(num1)-parseInt(num2);
+                    document.write(`${num1}-${num2}=${res}`)
+                    break;
+                case "*":
+                    var res=parseInt(num1)*parseInt(num2);
+                    document.write(`${num1}*${num2}=${res}`)
+                    break;
+                case "/":
+                    var res=parseInt(num1)/parseInt(num2);
+                    document.write(`${num1}/${num2}=${res}`)
+                    break;
+                default:
+                    document.write("invalid Operator")
+                    
+            }
+
+        }
+    </script>
+    <input type="button" value="onclick" onclick="f1()">
+    
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        function f1(){
+            var num=prompt("Enter the number")
+            var temp=num;
+            var sum=0;
+            while(temp>0){
+                // 153/10=3;
+                // document.write(temp);
+                var digit=temp%10;
+                console.log(digit)
+                console.log(digit**3)
+                sum=sum+digit**3;
+                console.log("sum"+sum);
+                temp=parseInt(temp/10);
+                console.log(temp)
+                console.log(".............")
+            }
+            if(sum==num){
+            console.log(`${num} is an armstrong number`)
+            }
+            else{
+                console.log(`${num} is not ana armstrong number`)
+            }
+            
+        }
+    </script> -->
+<script> function f1(){
+
+
+    var a = prompt("Please enter lower number")
+    var b = prompt("Please enter upper number")
+    for(var i=a;i<=b;i++){
+    var temp=i;
+    var noOfDigits=i.toString().length;
+    var sum=0;
+    while(temp>0){
+        var digit=temp%10;
+        temp=parseInt(temp/10);
+        sum+=digit ** noOfDigits;
+
+    }
+    if(sum == i)
+    {
+        console.log(i)
+    }
+    }
+
+}
+</script>
+
+   
+    <input type="button" value="clickme" onclick="f1()">
+    
+</body>
+</html>

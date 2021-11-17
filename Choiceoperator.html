@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function process(){
+            var first=document.getElementById("first").value;
+            var second=document.getElementById("second").value;
+             var def=document.getElementById("op").value
+            switch(def){
+            case "+":
+                result=parseInt(first)+parseInt(second);
+                break;
+            case "-":
+                result=first-second;
+                break;
+            case "*":
+                result=first*second;
+                break;
+           
+            case "/":
+                result=first/second;
+                break;
+           
+            }
+            document.getElementById("result").value=result;
+
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="first" placeholder="first number"/><br/>
+    <input type="text" id="second" placeholder="second number"/><br/><br>
+   result <select id="op" onchange="process()">
+    <option>+</option>
+    <option>-</option>
+    <option>*</option>
+    <option>/</option>
+    </select>
+    <br/><br/>
+    <input type="text" id="result" placeholder="result"/>
+ 
+</body>
+</html>

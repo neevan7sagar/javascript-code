@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //     function checkleapyear(year){
+    //         const leap = new Date(year,1,29).getDate()==29;
+    //         if(leap){
+    //             console.log(year+"is a leap year")
+    //         }
+    //         else{
+    //             console.log(year+"is not leap year")
+    //         }
+    //     }
+    //     const year = prompt("Enter the number")
+    //     checkleapyear(year)
+    //
+    // var num = prompt("Enter the number")
+    // if((num%4==0) && (num%100!=0)||(num%400==0))
+    // {
+    //     console.log("Year is leap")
+    // }
+    // else
+    // {
+    //     console.log("year is not leap")
+
+    // }
+
+var num = prompt("Enter the number")
+if(num%100==0)
+{
+    if(num%400==0){
+        console.log(num+"is a leap year")
+
+    }
+    else{
+        console.log(num+"is not  a leap year")
+    }
+    
+}
+else{
+    if(num%4==0)
+
+    {
+        console.log(num+"is leap year")
+    }
+
+    else{
+        console.log(num+"is not leap year")
+    }
+    
+    
+}
+    </script>
+</body>
+</html>

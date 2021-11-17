@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function f1(){
+
+
+            // let num1 = parseInt(prompt("Enter the first number"));
+            // let num2 = parseInt(prompt("Enter the second number"));
+            // let num3 = num1+num2;
+            // document.write("the sum of "+num1+"and"+num2+"="+num3)
+            // const a = parseInt(prompt("Enter the first number"));
+            // const b = parseInt(prompt("Enter th second number"));
+            // const c = a+b;
+            // // document.getElementById("demo").innerHTML = c;
+            // document.write(`the sum of ${a} and ${b} =${c} ` )
+
+                const first = window.document.num1.values;
+                const second = window.document.num3.values;
+                var result = parseInt(first)+parseInt(second);
+                window.document.myscreen.num3.values=result;
+
+
+
+
+        }
+
+    </script>
+    <form name="myscreen">
+        <input type="text" name="num1" placeholder="Enter the first number"><br>
+
+    <input type="text" name="num2" placeholder="Enter the second number"><br>
+    <input type="text" name="num3" placeholder="Result"><br>
+    
+    <input type="button" id = "demo" value="clickme" onclick="f1()">
+
+    </form>
+    
+    
+</body>
+</html>

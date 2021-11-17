@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- Program to Find Largest Number Among Three Numbers -->
+        <!-- <script>
+            function f1(){
+            var a = prompt("Enter the  value of a")
+            var b = prompt("Enter the  value of b")
+            var c = prompt("Enter the  value of c")
+            var x = Math.max(a,b,c)
+            console.log(`${a},${b},${c}largest number=${x}`)
+
+            } -->
+         <script>
+            function check(p,q,r)
+            {
+                 if(p>=q && p>=r){
+                 return p;
+                 }
+                 else if(q>=p && q>=r){
+                 return q;
+                 }
+                 else
+                 {
+                 return r;
+                 }
+                }
+                var a = prompt("Enter the  value of a")
+                var b = prompt("Enter the  value of b")
+                var c = prompt("Enter the  value of c")
+                var x = check(a,b,c)
+                console.log(`${a},${b},${c}largest number=${x}`)
+        
+            
+        </script>
+    
+<input type="button" value="clickme" onclick="check()">
+    
+</body>
+</html>
