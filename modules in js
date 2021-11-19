@@ -1,0 +1,8 @@
+app.js 
+const names = require('./4-names')
+console.log(names)
+4-names.js
+const fname = "Naveen";
+const mname = "kumar"
+const lname = "Sagar";
+module.exports = {fname,mname,lname}
