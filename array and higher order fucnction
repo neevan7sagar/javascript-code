@@ -1,0 +1,377 @@
+//1.map() method
+// const arr = [1,2,3,4,5,6]
+// const mapped = arr.map(element => element+30)
+// console.log(mapped)
+// const arr = [10,20,30,40,50,60]
+// const mapped = arr.map(element =>element+11)
+// console.log(mapped)
+//
+
+//2.filter()
+// const arr = [10,20,30,40,50,60]
+// const filterd = arr.filter(element => element === 20|| element=== 40)
+// console.log(filterd)
+// const arr = [2,4,6,8,10,12,14];
+// const filter = arr.filter(element=>element===10|| element===14)
+// console.log(filter)
+
+//3.sort()
+// const arr = [10,20,30,40,50]
+// const alphabet = ["a","b","c","d","e"]
+// const descend = arr.sort((a,b)=>a>b ? -1 : 1)
+// console.log(descend)
+// const ascend = arr.sort((a,b)=>a>b ? 1 : -1)
+// console.log(ascend)
+
+// //4.forEach()
+// const arr = [10,20,30,40,50]
+// arr.forEach(Element=>{
+//     console.log(Element)
+// })
+// const arr = ['a','b','c','d','e']
+// arr.forEach(Element=>{
+//     console.log(Element)
+// })
+
+//5.concat
+// const arr1 = [10,20,30,40,50]
+// const arr2 = [60,70,80,90,100]
+// const arr3 = arr1.concat(arr2)
+// console.log(arr1)
+// console.log(arr2)
+// console.log(arr3)
+// const arr1 = ['a','b','c','d','e']
+// const arr2 = ['f','g','h','i','j']
+// console.log(arr1.concat(arr2))
+// console.log(arr1)
+
+// 6.every()
+// const arr = [1,2,3,4,5,6,7,8,9]
+// const greaterfive = arr.every(num=> num>5)
+// console.log(greaterfive)// flase
+// const less9  = arr.every(num=>num <10)
+// console.log(less9)// true
+
+//7.some()
+// const arr = [1,2,3,4,5,6]
+// const greaterfive = arr.some(num=> num>5)
+// console.log(greaterfive);
+// const less5 = arr.some(num => num<0)
+// console.log(less5)
+
+
+//8.includes()
+// const arr = [1,2,3,4,5,6]
+// console.log(arr.includes(4))
+// console.log(arr.includes(7))
+
+// const arr = ['a','b','c','d','e']
+// console.log(arr.includes("g"))
+// console.log(arr.includes("c"))
+
+//9.join()
+// const arr = ["N","A","V","E","E","N"]
+// console.log(arr.join(''))
+// const arr = ["c","h","e","t","u"]
+// console.log(arr.join(''))
+
+//10.reduce()
+// const arr = [1,2,3,4,5,6,7]
+// const reduced = arr.reduce((total,current)=>total + current)
+// console.log(reduced)
+
+// const arr = [20,30,40,50,60]
+// const reduced = arr.reduce((totol,current)=>totol + current)
+// console.log(reduced)
+
+
+
+//11.find()
+
+// const arr = [1,2,3,4,5,6,7]
+// const findelement = arr.find(Element=>Element>5)
+// console.log(findelement)
+
+// const arr = [20,30,40,50,60,70]
+// const findelement = arr.find(Element=>Element>65)
+// console.log(findelement)
+
+//12.findindex()
+
+// const arr = ["naveen","chetu","rohan","bil"]
+// const findindex = arr.findIndex(Element=>Element==="rohan")
+// console.log(findindex)
+
+
+// const fruitsarr = ["apple","pineapple","guava","orange","mango"]
+// const findindex = fruitsarr.findIndex(Element=>Element==="mango")
+// console.log(findindex)
+
+
+
+//13. indexOf()
+
+// const arr = ["navi","kavi","lavi","mavi"]
+// console.log(arr.indexOf("lavi"))//2
+// console.log(arr.indexOf("mango"))//if it is not found -1
+
+//14. fill( )
+
+// const arr = new Array(3)
+// console.log(arr)
+// console.log(arr.fill(20))
+// const arr = [1,2,3,4,5,6,7]
+// console.log(arr)
+// console.log(arr.fill(30))//every place has 30
+
+
+// 15. slice( )
+
+// const arr = [1,2,3,4,5,6,7]
+// console.log(arr.slice(2,4))
+// console.log(arr)
+
+// const arr = ["navi","kavi","lavi","mavi","mani"]
+// console.log(arr.slice(2,4))
+// console.log(arr)
+
+// 16. reverse( )
+// const arr = ["navi","kavi","lavi","mavi","mani"]
+// console.log(arr.reverse())
+
+
+// const arr1 = [1,2,3,4,5,6,7]
+// console.log(arr1.reverse())
+
+// 17. push( )
+
+// const arr = [2,3,55,66,77]
+// console.log(arr.push(20))
+// console.log(arr)
+
+
+// 18. pop( )
+// const arr = [2,3,55,66,77]
+// console.log(arr.pop())
+// console.log(arr)
+
+
+// 19.shift()
+// const arr = [2,3,55,66,77]
+// console.log(arr.shift())
+// console.log(arr)
+
+
+// // 20.unshift()
+// const arr = [2,3,55,66,77]
+// console.log(arr.unshift(88))
+// console.log(arr)
+
+
+//Higher order function 
+//sort(),map(),filter(),reduce(),bind()
+//sort()
+
+
+// const arr = [{name:"naveen",age:27},
+// {name:"naveen",age:26},
+// {name:"chetu",age:21},
+// {name:"roy",age:22},
+// {name:"sarvesh",age:23},
+// {name:"ritesh",age:28}
+// ]
+// arr.sort((person1,person2)=>{
+//     return person1.age - person2.age
+// })
+// console.log(arr)
+
+
+// map()
+
+
+// const arr  = [200,300,400,500,600]
+// const arr1=arr.map(num=>num/200);
+// console.log(arr1)
+
+
+// reduce()
+// const arr = [1,2,3,4,[5],[6]]
+// const arr1 = arr.reduce((prev,curr)=>{
+//      return prev.concat(curr);
+// },[])
+// console.log(arr1)
+// const arr = [1.,2,3,4,5,6]
+// const arr1 = arr.reduce((total,current)=>{
+//     return total+current;
+// })
+// console.log(arr1)
+
+
+//call(),apply(),Bind()
+
+
+// call() function
+// apply() function 
+// bind() function
+
+
+// const greeting = {
+//     message:"hi",
+//     name:"joy",
+//     getGreeting:function(){
+//         console.log(this.message+" "+this.name)
+
+//     }
+// }
+// const greeting2 = {
+//     message:"hello",
+//     name:"harish"
+// }
+// greeting.getGreeting.call(greeting2)// hello harish
+// // for passing other argument
+// greeting.getGreeting.call(greeting2,"hi am from india")
+
+// //apply takes other argument in an array
+// greeting.getGreeting.apply(greeting2,["hello i am from india","i like to do travel"])
+
+
+// let copyofmethod = greeting.getGreeting.bind(greeting2)
+// copyofmethod()
+    
+
+
+
+// revision of function call(), apply() and bind()
+
+// Bind()
+// const pokeman = {
+//     firstname:"pika",
+//     lastname:"chu",
+//     getpokname:function(){
+//     let fullname = this.firstname+ " "+this.lastname;
+//     return fullname;
+    
+//     }
+// };
+// var pokemonName = function (){
+//     console.log(this.getpokname()+" I choose you")
+
+// }
+// var logpokemon = pokemonName.bind(pokeman)//// creates new object and binds pokemon. 'this' of pokemon === pokemon now
+// logpokemon()
+
+// var company  = {
+//     fname:"chetu",
+//     lname:"india",
+//     getcompany:function(){
+//         var fullname = this.fname+ " "+this.lname;
+//         return fullname;
+
+//     }
+// }
+// companyname = function(lunch,brunch){
+//     console.log(this.getcompany()+'loves'+lunch+"and"+brunch)
+// }
+// companyname.call(company,"naveen","noida")//chetu inda loves naveen and noida
+// companyname.apply(company,["naveen","noida"])//chetu india loves naveen and noida
+
+
+
+//Understanfing promise in js
+// promise are the same as real life promise which  we are making in real life 
+// suppose you make a promise to your friend that are next weekend you will take them to a  party .
+// but actually you dont know you will get time on  the weekend or not.
+// means either yor are going to complete that promise or may be not.
+//pending->t=you dont know yhou will get time or not.
+//fulfilled=> you gave them party
+//Rejected=>you dont give party to them.
+// there are two parts:
+//1.creation of promise
+//Handling of promise.
+//Creation of promise
+
+//new promise (//* executor// function(Resolve,rejected),{...})
+
+//Handling of promises.
+// let partyPromise = true;
+// let giveparty = new Promise((resolve,reject)=>{
+//     setTimeout(()=>{
+//         if(partyPromise){
+//             resolve("i  given party to the friend")
+//         }else{
+//             reject("i am not given party to the friend ")
+//         }
+//     },5*1000)
+// });
+// console.log(giveparty)
+
+// promise object having  static method and prototype method.
+//.1 promise.prototype.then(onFullfilled,onRejected)
+//2.promise.prototype.catch(onRejcted)
+//3.promise.prototype.finally(Onfinally)
+
+//1.promise.protptype.then(onFullfilled,onRejected)
+//the then() the method is used to schedule a callback to be executed when the promise is sucessfully resolved.
+
+//2.promise.prototype.catch(onRejected)
+//if you want to schedule a callback to be executed when the promise is rejectd.
+//promise.prototype.then(onFinally)
+//it is used to executed the same piece of code whether the promise  is fulfilled or rejected
+
+
+
+// let partyPromise = false;
+
+// let giveparty = new Promise(function(resolve,reject){
+//     setTimeout(()=>{
+//         if(partyPromise)
+//         {
+//             resolve("i given party to the friend")
+//         }
+//         else{
+//             reject("i am not given  the party to the friend ")
+//         }
+//     },5000)
+
+// })
+// console.log(giveparty)
+
+
+function makePromise(partyPromise){
+    return new Promise(function(resolve,reject){
+        setTimeout(()=>{
+            if(partyPromise){
+                resolve("i given the party to the friend")
+            }
+            else{
+                reject("i am not given the party to the friend")
+            }
+
+        },5000)
+       
+});
+}
+let partyPromise = makePromise(true);
+partyPromise
+.then(success=>console.log("success"))
+.catch(reason=>console.log("reason"))
+.finally(()=>console.log("friend are ready for party"))
+
+
+
+               
+
+
+
+
+
+
+
+
+
+// Key points:
+// Use promises whenever you are using async or blocking code.
+// A promise is an object that returns a value in the future.
+// A promise starts in the pending state and ends in either a fulfilled state or a rejected state.
+// resolve maps to then and reject maps to catch
+// If something needs to be done in both cases use .finally
